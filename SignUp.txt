@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body{
+            background-color: #344a72;
+            max-width: 960px;
+            margin: auto;
+            font-family: 'Raleway', sans-serif
+        }
+        .container{
+            background-color: white;
+            max-width: 100%;
+            margin: 30px auto;
+            padding: 20px;
+            height: 500px;
+            align-items: center;
+        }
+        #header{
+            text-align: center;
+        }
+        .frst{
+            display: block;
+            
+            
+        }
+        .lst{
+            display: block;
+        }
+        .email{
+            display: block;
+        }
+        .pass{
+            display: block;
+        }
+        .confirm-password{
+            display: block;
+        }
+        .btn{
+            display: block;
+            background-color: #49c1a2;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #49c1a2;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: #37a08e;
+        }
+        .bottom-text{
+            font-size: small;
+            text-align: center;
+            
+        }
+        footer{
+            text-align: center;
+        }
+        footer a{
+            color: #49c1a2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="header">
+        <h3>Sign Up</h3>
+        <p>It's free and only takes a minutes</p>
+    </div>
+    <form class="form-wrap">
+    <div id="main-part">
+        <label for="firstname" class="frst">First Name</label>
+        <input type="text" name="firstname"/>
+        <br><br>
+        <label for="lastname" class="lst">Last Name</label>
+        <input type="text" name="lastname"/>
+        <br><br>
+        <label for="email" class="email">Email</label>
+        <input type="email" name="email"/>
+        <br><br>
+        <label for="password" class="pass">Password</label>
+        <input type="password" name="password"/>
+        <br><br>
+        <label for="confirm password" class="confirm-password">confirm Password</label>
+        <input type="password" name="confirmpassword"/>
+        <br><br>
+        <button type="submit" class="btn">Sign Up</button>
+        <p class="bottom-text">
+            By Clicking the Sign Up button , you agree to our <a href="#">Terms & Condition</a> and <a href="#">Privacy Policy</a>
+        </p>
+    </div>
+    </form>
+    </div>
+    <footer>
+        <p>Already have a account?<a href="#">Login Here</a></p>
+    </footer>
+</body>
+</html>
